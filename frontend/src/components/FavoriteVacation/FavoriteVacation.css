@@ -1,0 +1,42 @@
+.FavoriteVacation {
+    min-height: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    background: #eff6ff;
+}
+
+.FavoriteVacation-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 6px;
+    letter-spacing: 0.03em;
+}
+
+
+.FavoriteVacation-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #0c7ac4, #38bdf8);
+}
+
+.FavoriteVacation-empty {
+    margin-top: 24px;
+    padding: 16px 18px;
+    border-radius: 12px;
+    background: #e0f2fe;
+    color: #0f172a;
+    font-size: 14px;
+}
+
+.FavoriteVacation .Vacations-grid {
+    margin-top: 8px;
+}

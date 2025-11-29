@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "5bbae4f2-56b5-4ff9-95d7-114346c061d5",
+		"name": "vacation_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47996150",
+		"_collection_link": "https://lyubimov99-9644166.postman.co/workspace/Pavel-Porin's-Workspace~0942365d-3ecf-4286-81dd-312275d01d08/collection/47996150-5bbae4f2-56b5-4ff9-95d7-114346c061d5?action=share&source=collection_link&creator=47996150"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Pavel\",\n  \"lastName\": \"Tester\",\n  \"email\": \"mike@example.com\",\n  \"password\": \"000000\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Admin\",\n  \"lastName\": \"User\",\n  \"email\": \"admin@example.com\",\n  \"password\": \"000000\",\n  \"role\": \"admin\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"mike@example.com\",\n  \"password\": \"000000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login afmin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"000000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new vacation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"destination\": \"Hungary - Budapest\",\n  \"description\": \"Relax in the famous thermal baths, explore the Danube bridges and enjoy the night lights of Budapest.\",\n  \"startDate\": \"2025-04-15\",\n  \"endDate\": \"2025-04-21\",\n  \"price\": 950.75,\n  \"imageName\": \"budapest.jpeg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vacation get all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacations/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacations",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZGMzMmZkMi1mYTZkLTQ5YzAtOGMzNS0yODVlN2EzYWNkMzEiLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwiaWF0IjoxNzYzNDgyNjYxLCJleHAiOjE3NjM1NjkwNjF9.det6YJ9e_nrSnbMo3WIhKRdu8AQwkef5RLq299oNgp0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacations/e5d68173-4eb0-4092-b046-3aa7757c02e9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacations",
+						"e5d68173-4eb0-4092-b046-3aa7757c02e9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit vacation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZGMzMmZkMi1mYTZkLTQ5YzAtOGMzNS0yODVlN2EzYWNkMzEiLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwiaWF0IjoxNzYzNDgyNjYxLCJleHAiOjE3NjM1NjkwNjF9.det6YJ9e_nrSnbMo3WIhKRdu8AQwkef5RLq299oNgp0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "destination",
+							"value": "Hungary - Budapest",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "New description for this vacation",
+							"type": "text"
+						},
+						{
+							"key": "startDate",
+							"value": "2025-04-15",
+							"type": "text"
+						},
+						{
+							"key": "endDate",
+							"value": "2025-04-22",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "999",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacations/ec1251c1-00fb-43e2-aaa8-02a142a27a94",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacations",
+						"ec1251c1-00fb-43e2-aaa8-02a142a27a94"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": \"66a02a73-6a6b-4023-acff-5c2add091cd4\",\n  \"vacationId\": \"fa2766de-b5de-4920-b78c-81009bcce01f\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/likes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unliked",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": \"53049a83-54c4-4a9a-a60c-142e47a47cbe\",\n  \"vacationId\": \"f720765d-7fa1-41c4-80e0-5e8b9832887c\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/likes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all likes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/likes/66a02a73-6a6b-4023-acff-5c2add091cd4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"likes",
+						"66a02a73-6a6b-4023-acff-5c2add091cd4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

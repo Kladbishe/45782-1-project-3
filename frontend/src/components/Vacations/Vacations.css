@@ -1,0 +1,27 @@
+.Vacations {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Vacations-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 200px));
+    justify-content: center;
+    gap: 12px;               
+}
+
+.Vacations-error {
+    margin-bottom: 12px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: #fbeaea;
+    color: #8a1c1c;
+    font-size: 13px;
+}
+
+.Vacations-loading {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #6b788b;
+}

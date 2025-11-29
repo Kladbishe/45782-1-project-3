@@ -1,0 +1,162 @@
+.VacationForm-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f8fc;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.VacationForm-card {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.12);
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-sizing: border-box;
+}
+
+.VacationForm-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.VacationForm-subtitle {
+    margin: 0 0 4px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.VacationForm-error {
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: #fbeaea;
+    color: #8a1c1c;
+    font-size: 13px;
+}
+
+.VacationForm-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+    color: #475569;
+}
+
+.VacationForm-input,
+.VacationForm-textarea {
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    padding: 9px 10px;
+    font-size: 14px;
+    outline: none;
+    background: #f8fafc;
+    box-sizing: border-box;
+}
+
+.VacationForm-input:focus,
+.VacationForm-textarea:focus {
+    border-color: #0c7ac4;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+    background: #ffffff;
+}
+
+.VacationForm-textarea {
+    resize: vertical;
+}
+
+.VacationForm-fieldError {
+    font-size: 12px;
+    color: #b91c1c;
+    margin-top: 2px;
+}
+
+.VacationForm-row {
+    display: flex;
+    gap: 12px;
+}
+
+.VacationForm-row > .VacationForm-label {
+    flex: 1;
+}
+
+.VacationForm-priceWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.VacationForm-pricePrefix {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.VacationForm-priceInput {
+    flex: 1;
+}
+
+/* <<< центрируем блок с картинкой внутри формы */
+.VacationForm-imageSection {
+    display: flex;
+    justify-content: center;
+}
+
+.VacationForm-imageSection .ImagePicker-root {
+    max-width: 260px;      /* ширина блока с картинкой */
+    width: 100%;
+}
+
+/* действия */
+.VacationForm-actions {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.VacationForm-submit {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #0c7ac4;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.12s ease, transform 0.05s ease, box-shadow 0.12s ease;
+}
+
+.VacationForm-submit:hover:not(:disabled) {
+    background: #0a60a0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2);
+}
+
+.VacationForm-submit:disabled {
+    background: #93c5fd;
+    cursor: default;
+    box-shadow: none;
+}
+
+.VacationForm-cancel {
+    padding: 9px 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #475569;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.12s ease, border-color 0.12s ease;
+}
+
+.VacationForm-cancel:hover {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+}

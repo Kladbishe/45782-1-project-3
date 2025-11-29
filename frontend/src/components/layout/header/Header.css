@@ -1,0 +1,173 @@
+.Header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-sizing: border-box;
+    background: #dbeafe;   
+    border-bottom: 1px solid #bfd7ff;
+    position: relative;
+}
+
+.Header-spacer {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.Header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.Header-logoImage {
+    height: 300px;
+    width: auto;
+    display: block;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.Header-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.Header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.Header-userBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.Header-email {
+    font-size: 12px;
+    color: #0f172a;
+    opacity: 0.8;
+}
+
+.Header-addButton {
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid #0c7ac4;
+    background: #e0f2fe;
+    color: #0c7ac4;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+        background 0.12s ease,
+        color 0.12s ease,
+        transform 0.05s ease,
+        box-shadow 0.12s ease;
+}
+
+.Header-addButton:hover {
+    background: #0c7ac4;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.2);
+}
+
+.Header-addButton:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.Header-statButton {
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid #0c7ac4;
+    background: #e0f2fe;
+    color: #0c7ac4;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+        background 0.12s ease,
+        color 0.12s ease,
+        transform 0.05s ease,
+        box-shadow 0.12s ease;
+}
+
+.Header-statButton:hover {
+    background: #0c7ac4;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.2);
+}
+
+.Header-statButton:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.Header-logoutButton {
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: #0c7ac4;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    transition:
+        background 0.12s ease,
+        transform 0.05s ease,
+        box-shadow 0.12s ease;
+}
+
+.Header-logoutButton:hover {
+    background: #0a6097;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.2);
+}
+
+.Header-logoutButton:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.Header-favoriteButton {
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid #0c7ac4;
+    background: #e0f2fe;
+    color: #0c7ac4;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+        background 0.12s ease,
+        color 0.12s ease,
+        transform 0.05s ease,
+        box-shadow 0.12s ease;
+}
+
+.Header-favoriteButton:hover {
+    background: #0c7ac4;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.2);
+}
+
+.Header-favoriteButton:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

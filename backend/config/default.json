@@ -1,0 +1,27 @@
+{
+  "app": {
+    "port": 3000,
+    "name": "vacation_project dev",
+    "secret": "MySecret",
+    "jwtSecret": "JwtSecret"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "vacation_project"
+  },
+  "s3": {
+    "bucket": "vacations-images",
+    "connection": {
+      "region": "us-east-1",
+      "endpoint": "http://localhost:4566",
+      "forcePathStyle": true,
+      "credentials": {
+        "accessKeyId": "test",
+        "secretAccessKey": "test"
+      }
+    }
+  }
+}

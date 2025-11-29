@@ -1,0 +1,79 @@
+.ImagePicker {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: inherit;
+}
+
+.ImagePicker-label {
+    font-size: 14px;
+    color: #64748b;
+}
+
+
+.ImagePicker-box {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    overflow: hidden;
+    background: #f8fafc;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease, transform 0.05s ease;
+}
+
+.ImagePicker-box:hover {
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
+    transform: translateY(-1px);
+}
+
+
+.ImagePicker-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ImagePicker-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.35);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ImagePicker-empty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ImagePicker-empty-icon {
+    width: 60px;
+    height: 40px;
+    border-radius: 6px;
+    border: 2px solid #94a3b8;
+    position: relative;
+}
+
+.ImagePicker-empty-icon::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border-radius: 4px;
+    border: 2px solid #94a3b8;
+}
